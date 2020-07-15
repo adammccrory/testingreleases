@@ -34,7 +34,7 @@ jobs:
         # Passes through options into git-ftp
         git-ftp-args: # optional 
   
-    run: 
+    run: echo Its done
 
 
     # Runs a single command using the runners shell
