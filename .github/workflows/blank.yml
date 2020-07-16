@@ -21,6 +21,6 @@ jobs:
     - uses: joelwmale/webhook-action@master
       env:
         WEBHOOK_URL: "https://chat.googleapis.com/v1/spaces/AAAAFc1msp0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0erhA9WNJBbWOPvkQOURtK37neNWZnapo7rhcDdCZqQ%3D"
-        data: "{'text': 'FTP Deploy ran from Github Actions', 'foo': 'bar'}"
+        message: "{'text': 'FTP Deploy ran from Github Actions', 'foo': 'bar'}"
 
       
