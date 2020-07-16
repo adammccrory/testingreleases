@@ -14,13 +14,14 @@ jobs:
       with:
         ftp-server: sonomac.co.uk
         ftp-username: adammc@sonomac.co.uk
-        ftp-password: letmein2letmein
-        local-dir: ./
+        ftp-password: letmein2letmein # these should live in settings > SECRET
+        local-dir: ./ # This could be ./dist or something if it was compiled/built
         git-ftp-args: # optional 
+        
     # WAS TRYING TO USE OUR GOOGLE CHAT THING BUT THIS PLUGIN DOES NOT WORK 
-    - uses: joelwmale/webhook-action@master
-      env:
-        WEBHOOK_URL: "https://chat.googleapis.com/v1/spaces/AAAAFc1msp0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0erhA9WNJBbWOPvkQOURtK37neNWZnapo7rhcDdCZqQ%3D"
-        message: "{'text': 'FTP Deploy ran from Github Actions', 'foo': 'bar'}"
+    #- uses: joelwmale/webhook-action@master
+    #  env:
+    #    WEBHOOK_URL: "https://chat.googleapis.com/v1/spaces/AAAAFc1msp0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0erhA9WNJBbWOPvkQOURtK37neNWZnapo7rhcDdCZqQ%3D"
+    #    message: "{'text': 'FTP Deploy ran from Github Actions', 'foo': 'bar'}"
 
       
