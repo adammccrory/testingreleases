@@ -19,7 +19,7 @@ jobs:
         git-ftp-args: # optional 
     - uses: joelwmale/webhook-action@master
       env:
-        WEBHOOK_URL: ${ "https://chat.googleapis.com/v1/spaces/AAAAFc1msp0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0erhA9WNJBbWOPvkQOURtK37neNWZnapo7rhcDdCZqQ%3D" }
-        data: "{'txt': 'FTP Deploy ran from Github Actions'}"
+        WEBHOOK_URL: http://chat.googleapis.com/v1/spaces/AAAAFc1msp0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=0erhA9WNJBbWOPvkQOURtK37neNWZnapo7rhcDdCZqQ%3D
+        data: "{'txt': 'FTP Deploy ran from Github Actions', 'foo': 'bar'}"
 
       
